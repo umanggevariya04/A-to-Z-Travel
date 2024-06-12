@@ -1,0 +1,106 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(/image/img_01.jpg);
+  background-size: cover;
+}
+
+.navbar {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 2em 4em;
+  font-size: 1.5em;
+}
+
+.nav-index {
+  display: flex;
+  gap: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  position: relative;
+}
+
+.nav-index a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  border-bottom: 2px solid lightgreen;
+  transition: 0.2s linear;
+}
+.nav-index a:hover:before {
+  width: 90%;
+
+}
+.reg-btn {
+  display: flex;
+  background-color: lightgreen;
+  margin: 2em 3em;
+  height: 2em;
+  width: 5em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.reg-btn:hover {
+  background: transparent;
+  border: 1px solid lightgreen;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  color: white;
+  font-size: 3em;
+}
+.sm-font {
+  font-size: 1.5em;
+}
+
+.book-btn {
+  display: flex;
+  background-color: lightgreen;
+  color: white;
+  margin: 2em 3em;
+  height: 2em;
+  width: 8em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.3s;
+  }
+  
+  .book-btn:hover{
+  background: transparent;
+  border: 1px solid lightgreen;
+  cursor: pointer;
+  transform: scale(1.3);
+}
